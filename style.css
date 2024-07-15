@@ -1,0 +1,85 @@
+.grid-container{
+    display: grid;
+    grid-template-areas: 'header header header'
+    'nav nav nav'
+    'main main aside'
+    'article article aside'
+    'footer footer footer';
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+   
+}
+
+.nav{
+    background-color: antiquewhite;
+    grid-area: nav;
+    display: flex;
+    padding: auto;
+    justify-content: center;
+}
+
+.nav a{
+    background-color: steelblue;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    border-color: blue;
+    padding: 1%;
+    margin-left: 2%;
+    width: 12%;
+    
+}
+
+.nav :hover{
+    background-color: darkgrey;
+    color: darkorchid;
+}
+.main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    
+}
+
+.main div{
+    margin: 0 5%;
+}
+
+#Perros{
+    display: flex;
+}
+
+#Gatos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aside{
+    grid-area: aside;
+    position: sticky;
+
+}
+
+.article{
+    grid-area: article;
+
+}
+
+.article div{
+    justify-content: center;
+    padding: 5%;
+}
+
+.footer{
+    grid-area: footer;
+
+}
+
+.card img{
+    width: 80%;
+    height: 35%;
+}
